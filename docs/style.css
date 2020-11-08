@@ -28,7 +28,7 @@ html, body, div, span, applet, object, iframe,
 html, body {
     margin: 0;
     padding: 0;
-      background-color:#f7f8f9;
+      background-color:#f6f7f8;
     font-family: sofia-pro,sans-serif;
   }
   
@@ -150,9 +150,13 @@ font-style: normal;
    /*background-*/
    font-size:24px;
    border:2px solid #11B297;
+   background-color:#11B297;
    margin:10px auto;
   }
  
+  span{
+    color:#fff;
+  }
   .card-content {
     padding: 10px 20px 20px 20px;
   }

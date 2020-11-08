@@ -128,7 +128,7 @@ var ballArr = []/*new Array(num)*/;
 var ball;
 
 function setup() {
-  canvas = createCanvas(400, 400);
+  canvas = createCanvas(360, 360);
   canvas.parent("P5canvas");
   capture = createCapture(VIDEO);
   capture.hide();
@@ -272,13 +272,13 @@ function help_prePlay() {
   rect(0, 0, width, height);
   fill(0, 0, 100, 100);
   textSize(18);
-  text("Instruction", width / 2, 260);
+  text("Instruction", width / 2, 220);
   textSize(12);
-  text("If you clap, you can generate ball!", width / 2, 290);
-  text("To reduce ball - Press DELETE or BACKSPACE key.", width / 2, 305);
-  text("If your cursor positions high,", width / 2, 325);
-  text("ball's bounce cycle be fast, and vice versa.", width / 2, 340);
-  text("The more capture is brighter, the more sounds are higer!", width / 2, 360);
+  text("If you clap, you can generate ball!", width / 2, 250);
+  text("To reduce ball - Press DELETE or BACKSPACE key.", width / 2, 270);
+  text("If your cursor positions high,", width / 2, 295);
+  text("ball's bounce cycle be fast, and vice versa.", width / 2, 310);
+  text("The more capture is brighter, the more sounds are higer!", width / 2, 330);
 }
 
 function help_playing() {
@@ -287,13 +287,13 @@ function help_playing() {
   rect(0, 0, width, height);
   fill(0, 0, 100, 100);
   textSize(18);
-  text("Instruction", width / 2, 260);
+  text("Instruction", width / 2, 220);
   textSize(12);
-  text("If you clap, you can generate ball!", width / 2, 290);
-  text("To reduce ball - Press DELETE or BACKSPACE key.", width / 2, 305);
-  text("If your cursor positions high,", width / 2, 325);
-  text("ball's bounce cycle be fast, and vice versa.", width / 2, 340);
-  text("The more capture is brighter, the more sounds are higer!", width / 2, 360);
+  text("If you clap, you can generate ball!", width / 2, 250);
+  text("To reduce ball - Press DELETE or BACKSPACE key.", width / 2, 270);
+  text("If your cursor positions high,", width / 2, 295);
+  text("ball's bounce cycle be fast, and vice versa.", width / 2, 310);
+  text("The more capture is brighter, the more sounds are higer!", width / 2, 330);
 }
 
 

@@ -17,7 +17,7 @@ class Ball {
     this.mode = int(random(1, 3));
     this.modeRec = this.mode
     this.rate = 0;
-    console.log("mode" + this.mode);
+    //console.log("mode" + this.mode);
   }
 
   drawBall() {
@@ -38,26 +38,26 @@ class Ball {
     if (this.y > height - this.radius || this.y < 0 + this.radius) {
       this.ySpeed = this.ySpeed * (-1);
       this.mode = this.modeRec;
-      print("return" + this.mode);
+      //print("return" + this.mode);
 
     }
 
     if (this.mode == 1) {
       file1.play();
       this.mode = 0;
-      print("file1 played!");
+      //print("file1 played!");
     }
 
     if (this.mode == 2) {
       file2.play();
       this.mode = 0;
-      print("file2 played!");
+      //print("file2 played!");
     }
 
     if (this.mode == 3) {
       file3.play();
       this.mode = 0;
-      print("file3 played!");
+      //print("file3 played!");
     }
     this.drawBall();
   }
@@ -183,9 +183,8 @@ function draw() {
     }
 
     briAve = int(briSum * 100 / size); //明るさの平均値 processingの100倍
-    print("brightness average" + briAve);
+    //print("brightness average" + briAve);
     briLev = map(briAve, 0, 100, 0, 3);
-    //print(briLev*50);
     file1.rate(briLev);
     file2.rate(briLev);
     file3.rate(briLev);
@@ -197,7 +196,7 @@ function draw() {
 
     if (ballArr.length > LENGTH) {
       ballArr.shift();
-      print("removed");
+      //print("removed");
     }
 
     wave.run();
@@ -226,7 +225,7 @@ function draw() {
 function generateBall() {
   ball = new Ball();
   ballArr.push(ball);
-  print(ballArr.length);
+  //print(ballArr.length);
 
 }
 
@@ -236,7 +235,7 @@ function keyPressed() {
     ///p5.js ではkeyではなくkeyCode
     if (keyCode === DELETE || keyCode === BACKSPACE) {
       ballArr.shift();
-      print("key pressed and removed");
+      //print("key pressed and removed");
     }
   }
 }
@@ -250,7 +249,7 @@ function refresh() { //blendModeを変えた時なぜかbackgroundの方を使�
   rect(0, 0, width, height);
   fill(170, 90, 70, 100);
   textSize(60);
-  text("Clap!", width / 2, textPosY - 50);
+  text("Clap!", width / 2, textPosY - 60);
   textSize(20);
   text("- with brightness -", width / 2, textPosY + 20);
   textSize(16);
@@ -300,7 +299,10 @@ function help_playing() {
 
 
 
-
+/*error at
+ var sourceLength = arraySequence[0].length;
+  this.inputRingBuffer.push([input[0]]);
+  */
 /*reference
 Text Allign
 https://qiita.com/akspect/items/14962dbe0b7d45627b4e

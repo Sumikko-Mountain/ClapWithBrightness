@@ -42,7 +42,7 @@ html, body {
   
   }
   #defaultCanvas0{
-  margin:100px auto 20px auto;
+  margin:100px auto 0px auto;
     
   }
   
@@ -86,11 +86,24 @@ font-style: normal;
     color: #11B297;
   }
   a:hover{
-    color: #01a287;
+    color: #009277;
   }
 .content{
   margin:30px auto;
   padding:20px;
+}
+.attention
+{
+  padding:20px;
+  font-size:14px;
+  
+}
+.attention p{
+  padding:2px 0; 
+}
+.attention h4{
+  font-size:16px;
+   padding:12px 0 2px 0; 
 }
 
 .bugList-wrappter{
@@ -176,7 +189,7 @@ font-style: normal;
      line-height: 1.5em;
      letter-spacing: 0.8px;
      padding: 20px 0 0 0;
-     margin-top:60px;
+     margin-top:60px 20px 0 20px;
     }
  
      footer p {
